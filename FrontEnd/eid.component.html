@@ -1,0 +1,20 @@
+<div class="page">
+  <div class="container">
+    <button class="button is-danger" (click)="check()">Click to connect</button>
+  </div>
+  <div class="con">
+    <h1 class="is-size-3">{{ message }}</h1>
+    <i *ngIf="message == 'Starting point'" class="fas fa-arrow-circle-up"></i>
+    <i
+      *ngIf="
+        message ==
+        'You are not logged in from the extension , please use the extension and your code pin to log in !'
+      "
+      class="fas fa-exclamation-triangle"
+    ></i>
+    <i
+      *ngIf="message == 'You are logged in from the extension ! Good work'"
+      class="fas fa-child"
+    ></i>
+  </div>
+</div>
