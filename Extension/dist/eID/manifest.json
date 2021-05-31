@@ -1,0 +1,17 @@
+{
+  "name": "Belgium eID",
+  "version": "1.0",
+  "description": "Build an Extension with Angular",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "externally_connectable": {
+    "matches": ["http://localhost:4200/*"]
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": ["storage"]
+}
